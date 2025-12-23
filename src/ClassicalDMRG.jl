@@ -57,5 +57,6 @@ function get_initial_block(model::DMRGModel)
     error("get_initial_block not implemented for $(typeof(model))")
 end
 function get_superblock(fdmrg::FiniteDMRG, model::DMRGModel)
+end
 
 end
