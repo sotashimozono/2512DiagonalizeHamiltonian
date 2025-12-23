@@ -2,7 +2,7 @@ ENV["GKSwstype"] = "100"
 
 using Test
 using Plots, LinearAlgebra
-const dirs = [""]
+const dirs = ["BlockDMRG"]
 
 @testset "tests" begin
   test_args = copy(ARGS)

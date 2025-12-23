@@ -2,7 +2,7 @@
 
 julia_version = "1.12.2"
 manifest_format = "2.0"
-project_hash = "783a4ebdddc80e9c6fa8659172936209fd7f19a9"
+project_hash = "1c8fb89d6360e9bacd367734e272d092b699386f"
 
 [[deps.AliasTables]]
 deps = ["PtrArrays", "Random"]
@@ -136,7 +136,7 @@ uuid = "8bb1440f-4735-579b-a4ab-409b98df4dab"
 version = "1.9.1"
 
 [[deps.DiagonalizeHamiltonian]]
-deps = ["Arpack", "LinearAlgebra", "Plots", "Random", "Reexport", "SparseArrays", "Statistics"]
+deps = ["Arpack", "Lattice2D", "LinearAlgebra", "Plots", "Random", "Reexport", "SparseArrays", "Statistics", "Test"]
 path = "."
 uuid = "6ee7953c-facd-4073-bf73-d29b8b119bcc"
 version = "0.1.0"
@@ -370,6 +370,12 @@ version = "0.16.10"
     SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
     SymEngine = "123dc426-2d89-5057-bbad-38513e3affd8"
     tectonic_jll = "d7dd28d6-a5e6-559c-9131-7eb760cdacc5"
+
+[[deps.Lattice2D]]
+deps = ["LinearAlgebra", "Plots"]
+git-tree-sha1 = "b00d450b9916c68478c75612be191d4b215799be"
+uuid = "e8031020-b7ff-4f1d-bee4-f79aea4cf140"
+version = "0.1.2"
 
 [[deps.LibCURL]]
 deps = ["LibCURL_jll", "MozillaCACerts_jll"]

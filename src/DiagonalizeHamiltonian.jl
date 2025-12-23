@@ -3,20 +3,9 @@ module DiagonalizeHamiltonian
 using Reexport
 @reexport using SparseArrays, LinearAlgebra, Arpack
 @reexport using Plots, Statistics, Random
-
-const I = sparse([1.0 0.0; 0.0 1.0])
-const σx = sparse([0.0 1.0; 1.0 0.0])
-const σy = sparse([0.0 -im; im 0.0])
-const σz = sparse([1.0 0.0; 0.0 -1.0])
-export σx, σy, σz
-
-const ↑ = [1.0; 0.0]
-const ↓ = [0.0; 1.0]
-export ↑, ↓
-
-A ⊗ B = kron(A, B)
+# include("ClassicalDMRG.jl")
+#=
 δE(λ) = λ[2:end] - λ[1:(end - 1)]
-export ⊗, δE
 
 #TODO : Distribution
 poisson(E) = exp(-E)
@@ -137,5 +126,6 @@ function (model::XYZ)(N::Int)
   end
   return Hermitian(H)
 end
+=#
 
 end
